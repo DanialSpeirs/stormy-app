@@ -32,9 +32,13 @@ class ViewController: UIViewController {
         // NSURLRequest object
         let request = NSURLRequest(URL: forecastURL!)
         
-        let dataTask = session.dataTaskWithRequest(request, completionHandler: { (data: NSData!, response: NSURLResponse!, error: NSError!) -> Void in
-            <#code#>
-        })
+        let dataTask = session.dataTaskWithRequest(request) { (data: NSData!, response: NSURLResponse!, error: NSError?) -> Void in
+            print(data!)
+            print("I'm on the backround thread")
+        }
+        
+        print("I'm on the main thread!")
+        dataTask.resume()
     
             }
 
