@@ -12,7 +12,7 @@
 		CE41EB421CA9C89A00E2F7AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41EB411CA9C89A00E2F7AC /* AppDelegate.swift */; };
 		CE41EB441CA9C89A00E2F7AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41EB431CA9C89A00E2F7AC /* ViewController.swift */; };
 		CE41EB471CA9C89A00E2F7AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41EB451CA9C89A00E2F7AC /* Main.storyboard */; };
-		CE41EB491CA9C89A00E2F7AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE41EB481CA9C89A00E2F7AC /* Assets.xcassets */; };
+		CE41EB491CA9C89A00E2F7AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE41EB481CA9C89A00E2F7AC /* Images.xcassets */; };
 		CE41EB4C1CA9C89A00E2F7AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41EB4A1CA9C89A00E2F7AC /* LaunchScreen.storyboard */; };
 		CE41EB571CA9C89A00E2F7AC /* StormyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41EB561CA9C89A00E2F7AC /* StormyTests.swift */; };
 		CE41EB621CA9CF0500E2F7AC /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE41EB611CA9CF0500E2F7AC /* CurrentWeather.plist */; };
@@ -36,7 +36,7 @@
 		CE41EB411CA9C89A00E2F7AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE41EB431CA9C89A00E2F7AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE41EB461CA9C89A00E2F7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE41EB481CA9C89A00E2F7AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE41EB481CA9C89A00E2F7AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE41EB4B1CA9C89A00E2F7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE41EB4D1CA9C89A00E2F7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE41EB521CA9C89A00E2F7AC /* StormyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +89,7 @@
 				CE41EB431CA9C89A00E2F7AC /* ViewController.swift */,
 				CE41EB631CA9CF1900E2F7AC /* CurrentWeather.swift */,
 				CE41EB451CA9C89A00E2F7AC /* Main.storyboard */,
-				CE41EB481CA9C89A00E2F7AC /* Assets.xcassets */,
+				CE41EB481CA9C89A00E2F7AC /* Images.xcassets */,
 				CE41EB4A1CA9C89A00E2F7AC /* LaunchScreen.storyboard */,
 				CE41EB4D1CA9C89A00E2F7AC /* Info.plist */,
 				CE41EB611CA9CF0500E2F7AC /* CurrentWeather.plist */,
@@ -191,7 +191,7 @@
 			files = (
 				CE41EB4C1CA9C89A00E2F7AC /* LaunchScreen.storyboard in Resources */,
 				CE41EB621CA9CF0500E2F7AC /* CurrentWeather.plist in Resources */,
-				CE41EB491CA9C89A00E2F7AC /* Assets.xcassets in Resources */,
+				CE41EB491CA9C89A00E2F7AC /* Images.xcassets in Resources */,
 				CE41EB471CA9C89A00E2F7AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
