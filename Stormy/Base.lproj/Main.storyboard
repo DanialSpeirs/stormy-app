@@ -47,20 +47,41 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="CH7-UG-VM2">
+                                <rect key="frame" x="190" y="108" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="dG1-Ar-5JN"/>
+                                    <constraint firstAttribute="height" constant="60" id="ilt-tW-avO"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dG1-Ar-5JN"/>
+                                        <exclude reference="ilt-tW-avO"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="zXL-Cv-vLd" firstAttribute="top" secondItem="Nq5-LI-lbe" secondAttribute="bottom" constant="6" id="3q5-8v-T84"/>
+                            <constraint firstItem="CH7-UG-VM2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="9EQ-hu-ukz"/>
                             <constraint firstItem="nAD-Wc-YjQ" firstAttribute="centerX" secondItem="zXL-Cv-vLd" secondAttribute="centerX" id="Avq-7F-Blf"/>
                             <constraint firstItem="Nq5-LI-lbe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eb9-Ej-GkE"/>
                             <constraint firstItem="nAD-Wc-YjQ" firstAttribute="top" secondItem="zXL-Cv-vLd" secondAttribute="bottom" constant="9" id="Jdq-bG-PLw"/>
                             <constraint firstItem="ZPR-Ya-TTb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="M7m-cq-1ai"/>
                             <constraint firstItem="hAI-vt-ycb" firstAttribute="centerX" secondItem="ZPR-Ya-TTb" secondAttribute="centerX" id="QqO-eY-Fus"/>
+                            <constraint firstItem="Nq5-LI-lbe" firstAttribute="top" secondItem="CH7-UG-VM2" secondAttribute="bottom" constant="37" id="aEd-QX-5PR"/>
                             <constraint firstItem="hAI-vt-ycb" firstAttribute="top" secondItem="ZPR-Ya-TTb" secondAttribute="bottom" constant="9" id="ahB-es-QxM"/>
                             <constraint firstItem="zXL-Cv-vLd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-65.5" id="fiD-3a-ski"/>
                             <constraint firstItem="Nq5-LI-lbe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mLn-b3-v9x"/>
                             <constraint firstItem="ZPR-Ya-TTb" firstAttribute="top" secondItem="Nq5-LI-lbe" secondAttribute="bottom" constant="6" id="uFS-wf-IWt"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9EQ-hu-ukz"/>
+                                <exclude reference="aEd-QX-5PR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="currentHumidityLabel" destination="nAD-Wc-YjQ" id="1Bq-34-Bq5"/>
@@ -72,4 +93,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="default" width="30" height="30"/>
+    </resources>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1D6FB91CB433EA00CDEA65 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D6FB81CB433EA00CDEA65 /* ForecastService.swift */; };
 		CE33226F1CAEFBD600F27CCA /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33226E1CAEFBD600F27CCA /* NetworkOperation.swift */; };
 		CE41EB421CA9C89A00E2F7AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41EB411CA9C89A00E2F7AC /* AppDelegate.swift */; };
 		CE41EB441CA9C89A00E2F7AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41EB431CA9C89A00E2F7AC /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE1D6FB81CB433EA00CDEA65 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 		CE33226E1CAEFBD600F27CCA /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		CE41EB3E1CA9C89A00E2F7AC /* Stormy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stormy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE41EB411CA9C89A00E2F7AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				CE41EB4D1CA9C89A00E2F7AC /* Info.plist */,
 				CE41EB611CA9CF0500E2F7AC /* CurrentWeather.plist */,
 				CE33226E1CAEFBD600F27CCA /* NetworkOperation.swift */,
+				CE1D6FB81CB433EA00CDEA65 /* ForecastService.swift */,
 			);
 			path = Stormy;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				CE33226F1CAEFBD600F27CCA /* NetworkOperation.swift in Sources */,
 				CE41EB441CA9C89A00E2F7AC /* ViewController.swift in Sources */,
 				CE41EB641CA9CF1900E2F7AC /* CurrentWeather.swift in Sources */,
+				CE1D6FB91CB433EA00CDEA65 /* ForecastService.swift in Sources */,
 				CE41EB421CA9C89A00E2F7AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
