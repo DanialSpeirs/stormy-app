@@ -87,6 +87,7 @@
                         <outlet property="currentHumidityLabel" destination="nAD-Wc-YjQ" id="1Bq-34-Bq5"/>
                         <outlet property="currentPrecipitationLabel" destination="hAI-vt-ycb" id="m22-jQ-OcS"/>
                         <outlet property="currentTemperatureLabel" destination="Nq5-LI-lbe" id="Rgo-82-cPw"/>
+                        <outlet property="currentWeatherIcon" destination="CH7-UG-VM2" id="t00-Tz-6DU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

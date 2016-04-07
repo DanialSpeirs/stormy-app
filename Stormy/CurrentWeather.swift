@@ -18,7 +18,7 @@ enum Icon: String {
     case Wind = "wind"
     case Fog = "fog"
     case Cloudy = "cloudy"
-    case PartlyCloudyDay = "party-cloudy-day"
+    case PartlyCloudyDay = "partly-cloudy-day"
     case PartlyCloudyNight = "partly-cloudy-night"
     
     func toImage() -> UIImage? {

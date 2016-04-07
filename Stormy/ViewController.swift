@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentTemperatureLabel: UILabel?
     @IBOutlet weak var currentHumidityLabel: UILabel?
     @IBOutlet weak var currentPrecipitationLabel: UILabel?
-    @IBOutlet weak var currentWeatherIcon: UIImageView?
+    @IBOutlet weak var currentWeatherIcon: UIImageView!
     
     private let forecastAPIKey = "41d46e6a63750627e715bf793630c6bc"
     let coordinate: (lat: Double, long: Double) = (37.8267,-122.423)
@@ -28,10 +28,9 @@ class ViewController: UIViewController {
             (let currently) in
             if let currentWeather = currently {
                 dispatch_async(dispatch_get_main_queue()) {
-                    // Execute closure
                     
                     if let temperature = currentWeather.temperature {
-                        self.currentTemperatureLabel?.text = "\(temperature)°"
+                        self.currentTemperatureLabel?.text = "\(temperature)º"
                     }
                     
                     if let humidity = currentWeather.humidity {
@@ -41,23 +40,24 @@ class ViewController: UIViewController {
                     if let precipitation = currentWeather.precipProbability {
                         self.currentPrecipitationLabel?.text = "\(precipitation)%"
                     }
-                    
+                    print(currentWeather.icon)
                     if let icon = currentWeather.icon {
                         self.currentWeatherIcon?.image = icon
                     }
+                    
+                    
+                    
                 }
-
+                
             }
-
         }
 
     }
 
         override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
-        }
-// This is a comment
-
+        // Dispose of any resources that can be recreated.
+    }
 
 
 }
