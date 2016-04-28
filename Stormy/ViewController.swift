@@ -10,54 +10,54 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var currentTemperatureLabel: UILabel?
-    @IBOutlet weak var currentHumidityLabel: UILabel?
-    @IBOutlet weak var currentPrecipitationLabel: UILabel?
-    @IBOutlet weak var currentWeatherIcon: UIImageView!
+    var dailyWeather: DailyWeather? {
+        didSet {
+            configureView()
+        }
+    }
     
-    private let forecastAPIKey = "41d46e6a63750627e715bf793630c6bc"
-    let coordinate: (lat: Double, long: Double) = (37.8267,-122.423)
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let forecastService = ForecastService(APIKey: forecastAPIKey)
-        forecastService.getForecast(coordinate.lat, long: coordinate.long) {
-            (let currently) in
-            if let currentWeather = currently {
-                dispatch_async(dispatch_get_main_queue()) {
-                    
-                    if let temperature = currentWeather.temperature {
-                        self.currentTemperatureLabel?.text = "\(temperature)º"
-                    }
-                    
-                    if let humidity = currentWeather.humidity {
-                        self.currentHumidityLabel?.text = "\(humidity)%"
-                    }
-                    
-                    if let precipitation = currentWeather.precipProbability {
-                        self.currentPrecipitationLabel?.text = "\(precipitation)%"
-                    }
-                    print(currentWeather.icon)
-                    if let icon = currentWeather.icon {
-                        self.currentWeatherIcon?.image = icon
-                    }
-                    
-                    
-                    
-                }
-                
-            }
+    }
+    
+    func configureView() {
+        if let weather = dailyWeather {
+            self.title = weather.day
+        }
+        
+        // Configure nav bar back button.
+        if let buttonFont = UIFont(name: "HelveticaNeue-Thin", size: 20.0) {
+            let barButtonAttributesDictionary: [String: AnyObject]? = [
+                NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: buttonFont
+            ]
+            UIBarButtonItem.appearance().setTitleTextAttributes(barButtonAttributesDictionary, forState: .Normal)
         }
 
+    }
+    
+    func makeShitHappen () {
+        self.title = "some title"
     }
 
         override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
